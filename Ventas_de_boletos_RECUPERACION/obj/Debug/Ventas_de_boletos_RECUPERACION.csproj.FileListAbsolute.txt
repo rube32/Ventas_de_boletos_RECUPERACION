@@ -1,0 +1,2 @@
+C:\Users\Rube\source\repos\Ventas_de_boletos_RECUPERACION\Ventas_de_boletos_RECUPERACION\obj\Debug\Ventas_de_boletos_RECUPERACION.csproj.AssemblyReference.cache
+C:\Users\Rube\source\repos\Ventas_de_boletos_RECUPERACION\Ventas_de_boletos_RECUPERACION\obj\Debug\Ventas_de_boletos_RECUPERACION.csproj.CoreCompileInputs.cache
