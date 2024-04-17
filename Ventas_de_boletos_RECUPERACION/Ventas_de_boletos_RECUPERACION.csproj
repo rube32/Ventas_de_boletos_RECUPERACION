@@ -71,6 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cliente1.cs" />
+    <Compile Include="Mostrar_Rutas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Ruta.cs" />
     <Compile Include="RutaManager.cs" />
