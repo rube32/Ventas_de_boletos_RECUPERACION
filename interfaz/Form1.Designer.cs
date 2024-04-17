@@ -30,9 +30,9 @@ namespace interfaz
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.chkPromocionColegios = new System.Windows.Forms.Label();
+            this.txtCantidadPersonas = new System.Windows.Forms.Label();
+            this.txtEdadCliente = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -53,36 +53,36 @@ namespace interfaz
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre";
             // 
-            // label3
+            // chkPromocionColegios
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(84, 227);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Promocion";
+            this.chkPromocionColegios.AutoSize = true;
+            this.chkPromocionColegios.Location = new System.Drawing.Point(84, 227);
+            this.chkPromocionColegios.Name = "chkPromocionColegios";
+            this.chkPromocionColegios.Size = new System.Drawing.Size(57, 13);
+            this.chkPromocionColegios.TabIndex = 2;
+            this.chkPromocionColegios.Text = "Promocion";
             // 
-            // label4
+            // txtCantidadPersonas
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(84, 185);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(98, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Cantidad Pasajeros";
+            this.txtCantidadPersonas.AutoSize = true;
+            this.txtCantidadPersonas.Location = new System.Drawing.Point(84, 185);
+            this.txtCantidadPersonas.Name = "txtCantidadPersonas";
+            this.txtCantidadPersonas.Size = new System.Drawing.Size(98, 13);
+            this.txtCantidadPersonas.TabIndex = 3;
+            this.txtCantidadPersonas.Text = "Cantidad Pasajeros";
             // 
-            // label5
+            // txtEdadCliente
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(84, 133);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(32, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Edad";
+            this.txtEdadCliente.AutoSize = true;
+            this.txtEdadCliente.Location = new System.Drawing.Point(84, 133);
+            this.txtEdadCliente.Name = "txtEdadCliente";
+            this.txtEdadCliente.Size = new System.Drawing.Size(32, 13);
+            this.txtEdadCliente.TabIndex = 4;
+            this.txtEdadCliente.Text = "Edad";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(496, 227);
+            this.button1.Location = new System.Drawing.Point(556, 217);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 5;
@@ -92,18 +92,19 @@ namespace interfaz
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(613, 227);
+            this.button2.Location = new System.Drawing.Point(567, 505);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(124, 47);
             this.button2.TabIndex = 6;
-            this.button2.Text = "Realizar Pago";
+            this.button2.Text = "Calcular Precio";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Perpetua Titling MT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(240, 37);
+            this.label2.Location = new System.Drawing.Point(230, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(372, 26);
             this.label2.TabIndex = 7;
@@ -140,16 +141,16 @@ namespace interfaz
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(87, 261);
+            this.dataGridView1.Location = new System.Drawing.Point(65, 267);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(626, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(626, 212);
             this.dataGridView1.TabIndex = 12;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(772, 584);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
@@ -158,9 +159,9 @@ namespace interfaz
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtEdadCliente);
+            this.Controls.Add(this.txtCantidadPersonas);
+            this.Controls.Add(this.chkPromocionColegios);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -173,9 +174,9 @@ namespace interfaz
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label chkPromocionColegios;
+        private System.Windows.Forms.Label txtCantidadPersonas;
+        private System.Windows.Forms.Label txtEdadCliente;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label2;
