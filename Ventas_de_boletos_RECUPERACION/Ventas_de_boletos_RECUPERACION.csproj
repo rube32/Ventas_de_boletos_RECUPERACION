@@ -71,6 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CalculadoraPrecios.cs" />
+    <Compile Include="Calcular_precio_final.cs" />
     <Compile Include="Cliente1.cs" />
     <Compile Include="Mostrar_Rutas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
